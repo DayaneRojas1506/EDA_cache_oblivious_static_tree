@@ -1,6 +1,5 @@
 # EDA_cache_oblivious_static_tree
-----
-# Cache-Oblivious Static Tree vs BST
+--
 
 ## 📌 Descripción
 
