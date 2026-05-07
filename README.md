@@ -1,7 +1,8 @@
 # EDA_cache_oblivious_static_tree
---
+- Rojas Brigitte
+- Miranda Yoselyn
 
-## 📌 Descripción
+## Descripción
 
 Este proyecto implementa y compara:
 
@@ -12,7 +13,7 @@ El objetivo es evaluar el impacto de la localidad de memoria en el rendimiento.
 
 ---
 
-## ⚙️ Configuración del experimento
+## Configuración del experimento
 
 - Número de elementos: 1,000,000
 - Número de consultas: 1,000,000
@@ -21,7 +22,7 @@ El objetivo es evaluar el impacto de la localidad de memoria en el rendimiento.
 
 ---
 
-## 🧪 Metodología
+## Metodología
 
 1. Generar N enteros aleatorios
 2. Ordenar los datos
@@ -34,6 +35,6 @@ El objetivo es evaluar el impacto de la localidad de memoria en el rendimiento.
 
 ---
 
-## ⏱️ Métrica
+## Métrica
 
 Tiempo total de ejecución de Q búsquedas:
