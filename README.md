@@ -35,6 +35,19 @@ El objetivo es evaluar el impacto de la localidad de memoria en el rendimiento.
 
 ---
 
-## Métrica
+# Resultados de Experimentos
 
-Tiempo total de ejecución de Q búsquedas:
+| Experimento | BST (s) | vEB (s) | Hits BST | Hits vEB |
+|---|---:|---:|---:|---:|
+| 1 | 0.971584 | 0.471755 | 1000000 | 1000000 |
+| 2 | 0.979670 | 0.360066 | 1000000 | 1000000 |
+| 3 | 0.975111 | 0.465507 | 1000000 | 1000000 |
+| 4 | 1.003750 | 0.461009 | 1000000 | 1000000 |
+| 5 | 1.010250 | 0.457245 | 1000000 | 1000000 |
+
+# Resultados Promedio
+
+| Estructura | Tiempo promedio |
+|---|---:|
+| BST | 0.988073 s |
+| vEB | 0.443116 s |
