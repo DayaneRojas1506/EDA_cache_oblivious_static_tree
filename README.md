@@ -35,19 +35,28 @@ El objetivo es evaluar el impacto de la localidad de memoria en el rendimiento.
 
 ---
 
-# Resultados de Experimentos
+# Resultados Experimentales
 
-| Experimento | BST (s) | vEB (s) | Hits BST | Hits vEB |
-|---|---:|---:|---:|---:|
-| 1 | 0.971584 | 0.471755 | 1000000 | 1000000 |
-| 2 | 0.979670 | 0.360066 | 1000000 | 1000000 |
-| 3 | 0.975111 | 0.465507 | 1000000 | 1000000 |
-| 4 | 1.003750 | 0.461009 | 1000000 | 1000000 |
-| 5 | 1.010250 | 0.457245 | 1000000 | 1000000 |
+Parámetros del experimento:
 
-# Resultados Promedio
+- Número de elementos: 1,000,000
+- Número de consultas: 1,000,000
+- Número de experimentos: 5
+- Tipo de dato: enteros de 32 bits
 
-| Estructura | Tiempo promedio |
-|---|---:|
-| BST | 0.988073 s |
-| vEB | 0.443116 s |
+## Resultados
+
+| Experimento | BST (s) | vEB Tree (s) | Speedup |
+|---|---:|---:|---:|
+| 1 | 0.947421 | 0.456572 | 2.075x |
+| 2 | 0.961711 | 0.520459 | 1.848x |
+| 3 | 0.969290 | 0.456134 | 2.125x |
+| 4 | 0.942815 | 0.470535 | 2.004x |
+| 5 | 0.972997 | 0.480469 | 2.025x |
+| **Promedio** | **0.958847** | **0.476834** | **2.011x** |
+
+## Observaciones
+
+El árbol cache-oblivious con layout van Emde Boas (vEB) obtuvo aproximadamente un speedup de 2x respecto al BST implementado con punteros.
+
+La mejora se debe principalmente a una mejor localidad de memoria y menor cantidad de cache misses durante las búsquedas.
