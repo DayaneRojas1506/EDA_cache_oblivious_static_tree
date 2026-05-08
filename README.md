@@ -59,4 +59,4 @@ Parámetros del experimento:
 
 El árbol cache-oblivious con layout van Emde Boas (vEB) obtuvo aproximadamente un speedup de 2x respecto al BST implementado con punteros.
 
-La mejora se debe principalmente a una mejor localidad de memoria y menor cantidad de cache misses durante las búsquedas.
+La mejora se debe principalmente a una mejor localidad de memoria y menor cantidad de fallos de caché durante las búsquedas
